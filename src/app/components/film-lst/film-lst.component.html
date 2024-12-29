@@ -1,0 +1,10 @@
+<div class="film-list">
+    <div 
+      *ngFor="let film of filteredFilms"
+      class="film-item"
+      [class.active]="selectedFilm?.id === film.id"
+      (click)="onSelect(film)">
+      <h3>{{ film.title }}</h3>
+      <p class="release-date">{{ film.release_date }}</p>
+    </div>
+  </div>

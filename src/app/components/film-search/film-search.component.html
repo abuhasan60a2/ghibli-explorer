@@ -1,0 +1,9 @@
+<div class="search-container">
+    <input
+      type="text"
+      [(ngModel)]="searchTerm"
+      (ngModelChange)="onSearchTermChange($event)"
+      placeholder="Search films..."
+      class="search-input"
+    >
+  </div>

@@ -1,0 +1,33 @@
+<div class="details-container" *ngIf="selectedFilm">
+    <div class="header">
+      <h2>{{ selectedFilm.title }}</h2>
+      <h3 class="original-title">{{ selectedFilm.original_title }}</h3>
+    </div>
+    
+    <div class="info-grid">
+      <div class="info-item">
+        <span class="label">Director</span>
+        <span class="value">{{ selectedFilm.director }}</span>
+      </div>
+      <div class="info-item">
+        <span class="label">Release Date</span>
+        <span class="value">{{ selectedFilm.release_date }}</span>
+      </div>
+      <div class="info-item">
+        <span class="label">Running Time</span>
+        <span class="value">{{ selectedFilm.running_time }} minutes</span>
+      </div>
+      <div class="info-item">
+        <span class="label">Rating</span>
+        <span class="value">{{ selectedFilm.rt_score }}%</span>
+      </div>
+    </div>
+  
+    <div class="description">
+      <p>{{ selectedFilm.description }}</p>
+    </div>
+  </div>
+  
+  <div class="no-selection" *ngIf="!selectedFilm">
+    <p>Select a film to see details</p>
+  </div>

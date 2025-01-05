@@ -77,12 +77,10 @@ src/
 │   │   │   └── ghibli.service.ts
 │   │   └── models/
 │   │       └── film.interface.ts
-│   ├── features/            # Feature modules
-│   │   └── films/
-│   │       ├── components/
-│   │       │   ├── film-list/
-│   │       │   ├── film-details/
-│   │       │   └── film-search/
+│   ├── components/
+│   │        ├── film-list/
+│   │        ├── film-details/
+│   │        └── film-search/
 │   ├── app.component.ts     # Root component
 │   ├── app.component.html
 │   ├── app.component.css

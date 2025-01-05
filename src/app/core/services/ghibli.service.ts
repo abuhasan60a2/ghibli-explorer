@@ -8,7 +8,7 @@ import { Film } from '../models/film.interface';
   providedIn: 'root'
 })
 export class GhibliService {
-  private apiUrl = 'https://ghibli.rest/films';
+  private apiUrl = 'https://ghibli-explorer-api-74r3.vercel.app/api/films';
   private selectedFilmSubject = new BehaviorSubject<Film | null>(null);
   selectedFilm$ = this.selectedFilmSubject.asObservable();
 
